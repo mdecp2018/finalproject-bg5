@@ -9,4 +9,4 @@ http://mdecourse.github.io/2018fall/
 
 cpgx 網站: https://cpgx.kmol.info
 
-https://mdecp2018.github.io/finalproject-bg5/content/index.html
+期末分組網站網址:https://mdecp2018.github.io/finalproject-bg5/content/index.html

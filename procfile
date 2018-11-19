@@ -1,1 +1,1 @@
-wed gunicorn flaskapp:app
+web gunicorn flaskapp:app

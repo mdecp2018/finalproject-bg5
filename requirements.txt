@@ -1,5 +1,6 @@
 flask==1.0.2
 gunicorn==19.7.1
 jinja2==2.10
-markzeug==0.14.1
+MarkupSafe==1.0
+Werkzeug==0.14.1
 beautifulsoup4==4.6.0

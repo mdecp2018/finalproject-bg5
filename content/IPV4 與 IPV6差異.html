@@ -71,6 +71,51 @@ $(function(){
 <p><img alt="" height="314" src="./../images/01.PNG" width="1000"/></p>
 <p><span><span style="font-family: 標楷體;"><span style="font-size: large;">網路通訊協定（Internet Protocol，IP）是用於網路交換封包的一種協定，它定義了定址方式及資料的封裝結構。簡單來說，就是你電腦的地址，而</span></span></span><span><span style="font-family: 標楷體;"><span style="font-size: large;">目前最被廣泛使用的網路協定為IPv4，現代人上網使用的任何服務幾乎都使用到它。而近幾年經常被提及的IPv6則是被視為繼承IPv4的下一代網路協定。</span></span></span></p>
 <p><span><span style="font-family: 標楷體;"><span style="font-size: large;">IPV6起源是因90年代有學者擔心IPv4位址不夠使用，所以重新規畫，因此IPv6除了在位址數量上大幅增加外，更進一步針對安全性、QoS等問題加以改進。</span></span></span></p>
+<p>雖然這兩個協定似乎只是版本上的差異，但實際上它們是徹底完全不同的兩個協定。也因為這樣，IPv4與IPv6不能互通，IPv4的用戶只能連線到IPv4的網站，且IPv6亦然。而兩者間較明顯的差異比較如下：</p>
+<p><strong>位址的數量</strong></p>
+<p>這兩個世代的網路協定，最明顯的差異就在於其提供的網路位址數量。IPv4的位址格式是採用32位元長度，位址能提供2的32次方個，換算後約42億個。雖然IPv4有這麼多IP位址，但依舊在2011年的2月3日消耗殆盡。</p>
+<p>而IPv6的位址格式則採用128位元長度，其位址能提供2的128次方個。它所能提供的IP位址，遠遠超過IPv4的數量，預估能讓地球上每個人都分到100萬個IP位址，或是地球上每平方公尺面積皆提供1000多個IP位址。簡而言之，轉換到IPv6後，IP位址的數量多到幾乎不可能用盡。</p>
+<p><strong>位址表示方式</strong></p>
+<table border="1" cellpadding="4" cellspacing="0" class="table ibm-grid" frame="border" rules="all" summary="">
+<thead align="left" class="thead">
+<tr class="row">
+<th class="entry" id="d19610e202" valign="top" width="32.95454545454545%">IPv4</th>
+<th class="entry" id="d19610e204" valign="top" width="39.77272727272727%">IPv6</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d19610e200 " valign="top" width="27.27272727272727%"><strong class="ph b" id="rzai2compipv4ipv6__compaddress"><a name="rzai2compipv4ipv6__compaddress"></a>Address（位址）</strong></td>
+<td align="left" class="entry" headers="d19610e202 " valign="top" width="32.95454545454545%">32 位元長（4 個位元組）。 位址由一個網路和一個主電腦部分組成（根據位址類別而定）。 根據起始幾個位元定義不同位址類別：A、B、C、D 或 E。 IPv4 位址總數為 4 294 967 296。
+<p class="p">IPv4 位址的文字形式為<span> </span><samp class="ph codeph">nnn.nnn.nnn.nnn</samp>，其中 0&lt;=<samp class="ph codeph"><var class="keyword varname ibm-item-note-alternate">nnn</var></samp>&lt;=255，每一個<span> </span><samp class="ph codeph"><var class="keyword varname ibm-item-note-alternate">n</var></samp><span> </span>是一個十進位數。可以省略前導零。最大列印字元數是 15，不計算遮罩。</p>
+</td>
+<td align="left" class="entry" headers="d19610e204 " valign="top" width="39.77272727272727%">128 位元長（16 個位元組）。 基本架構是以 64 位元代表網路號碼，以 64 位元代表主電腦號碼。 通常 IPv6 位址的主電腦部分（或它的一部分）將衍生自 MAC 位址或其他介面 ID。
+<p class="p">根據子網路字首，IPv6 有比 IPv4 更複雜的架構。</p>
+<p class="p">IPv6 位址數目是 IPv4 位址數目的 10<sup class="ph sup">28</sup><span> </span>(79 228 162 514 264 337 593 543 950 336) 倍。IPv6 位址的文字形式為<span> </span><samp class="ph codeph">xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx</samp>，其中的每一個<span> </span><samp class="ph codeph">x</samp><span> </span>是一個十六進位數字，代表 4 個位元。可以省略前導零。在文字形式的位址中可以使用雙冒號 (<samp class="ph codeph">::</samp>) 一次，以指定任意個 0 位元。例如，<samp class="ph codeph">::ffff:10.120.78.40</samp><span> </span>是 IPv4 對映的 IPv6 位址。</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>表頭格式與功能</strong></p>
+<p>IPv6的表頭格式是改良自IPv4，它有大幅度的修改，讓表頭格式更為簡化及具有擴充性。IPv6與IPv4共同的欄位有</p>
+<p>Version</p>
 <p></p>
+<p>Source Address</p>
+<table border="1" cellpadding="4" cellspacing="0" class="table ibm-grid" frame="border" rules="all" summary="">
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" headers="d19610e200 " valign="top" width="27.27272727272727%"><strong class="ph b" id="rzai2compipv4ipv6__compsourceaddr">Source address selection（來源端位址選擇）</strong></td>
+<td align="left" class="entry" headers="d19610e202 " valign="top" width="32.95454545454545%">應用程式可以指定來源 IP（通常使用 sockets<span> </span><samp class="ph codeph">bind()</samp>）。 如果它連結到 INADDR_ANY，則會根據路徑選擇來源 IP。</td>
+<td align="left" class="entry" headers="d19610e204 " valign="top" width="39.77272727272727%">就 IPv4 而言，應用程式可以使用<span> </span><samp class="ph codeph">bind()</samp><span> </span>指定來源 IPv6 位址。類似 IPv4，它可以讓系統使用 in6addr_any 選擇 IPv6 來源位址。 但是因為 IPv6 線路有許多 IPv6 位址，所以選擇來源 IP 的內部方法不同。</td>
+</tr>
+</tbody>
+</table>
+<p>Destination Address</p>
 <p></p>
-<br />IDE << <a href='IDE.html'>Previous</a> <a href='1-9週學習歷程.html'>Next</a> >> 1-9週學習歷程</section></div></body></html>
+<p>還有部分欄位功能類似，名稱卻不同。譬如Payload Length取代了Datagram Length、Next Header取代Protocol，以及Hop Limit取代TTL。</p>
+<p>而IPv6亦增加了Flow Label及Priority等兩個欄位，它們的功能是用來支援像視訊、語音這類即時服務的需求，以提高QoS的品質。</p>
+<p>就Flow Label欄位來說，IPv6的封包能夠在該欄位留下標記。在傳輸時，一連串的封包會要求所經過的路由器，提供特別的處理。而路由器則會透過該欄位，辨識封包的Flow Level；而Priority則可以設定封包傳輸的優先順序，透過這欄位的檢查，讓較重要的封包優先傳送。</p>
+<p><span><span style="font-family: 標楷體;"><span style="font-size: large;"><a href="https://www.ithome.com.tw/tech/92046">https://www.ithome.com.tw/tech/92046</a></span></span></span></p>
+<p><span><span style="font-family: 標楷體;"><span style="font-size: large;">https://www.ibm.com/support/knowledgecenter/zh-tw/ssw_ibm_i_71/rzai2/rzai2compipv4ipv6.htm#rzai2compipv4ipv6__compaddress</span></span></span></p>
+<p></p>
+<p></p><br />IDE << <a href='IDE.html'>Previous</a> <a href='1-9週學習歷程.html'>Next</a> >> 1-9週學習歷程</section></div></body></html>

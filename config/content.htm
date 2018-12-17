@@ -18,6 +18,157 @@
 <p><span>期中自評:70</span></p>
 <p><span>個人網站 </span><a href="https://mdecp2018.github.io/site-s40723226/content/index.html" rel="nofollow">https://mdecp2018.github.io/site-s40723224/content/index.html</a>  <span style="background-color: #ffffff; color: #626262;"></span></p>
 <h1>Independent study</h1>
+<h2>python basic syntax(python 基本用法)</h2>
+<p><span style="font-family: 標楷體;"><span style="font-size: large;">一.編碼: <br/>在電腦裡，繁體中文編碼主要分為BIG-5及UTF-8，以上兩種python 都支援，但</span><fonr face="標楷體"><span style="font-size: large;">UTF-8和BIG-5最大差異為於<span style="color: #ff0000;">語系相容性<span style="color: #000000;">。<br/>BIG-5專門作為繁體中文的編碼方式，因此對於其他語系的系統相容性較低；反之UTF-8是符合Unicode格式，因此UTF-8對於繁體中文以外的語系相容性較佳。</span></span></span></fonr></span></p>
+<p style="text-align: left;"><span style="font-size: large;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="font-family: 標楷體;">在python3.X版以後的版本將UTF-8設為預設編碼，因此不下手動執行編碼動作也可使用中文。</span></span></span></span></p>
+<p style="text-align: center;"><strong><span style="font-size: large;"><span style="font-family: helvetica;">#_*_conding:UTF-8_*_</span></span></strong></p>
+<p><span style="font-family: 標楷體;"><span style="font-size: large;">上述為python<span style="color: #ff0000;">標準編碼</span>，「#」為註解意思，電腦在執行程式時會自動跳過註解；若「</span></span><span style="font-family: 標楷體;"><span style="font-size: large;"></span></span><span style="font-family: 標楷體;"><span style="font-size: large;">#」號後面接「coding:編碼方式」時，整句陳述句會變成宣告編碼的意思，此時電腦便不會跳過而是將其解讀為宣告編碼。</span></span></p>
+<p><span style="font-family: 標楷體; font-size: large;">因python版本不斷演進，以至於標準編碼中的_*_可省去，直接執行#coding:就可以了。<br/>                 </span></p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong><span style="font-family: 標楷體; font-size: large;">以下為標準碼延伸說明</span></strong></span></p>
+<table border="1" style="border-collapse: collapse; width: 116.931%; height: 282px;">
+<tbody>
+<tr style="height: 47px;">
+<td style="width: 39.1424%; height: 47px;"><span style="font-size: large;"><span style="font-family: helvetica;">#_*_conding:UTF-8_*_</span></span></td>
+<td style="width: 69.019%;"><span style="font-family: 標楷體;"><span style="font-size: large;">#正式寫法，python編碼聲明格式</span></span></td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 39.1424%; height: 47px;"><span style="font-size: large;"><span style="font-family: helvetica;">#coding:UTF-8</span></span></td>
+<td style="width: 69.019%; height: 47px;"><span style="font-family: 標楷體;"><span style="font-size: large;">#可捨棄_*_</span></span></td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 39.1424%; height: 47px;"><span style="font-size: large;"><span style="font-family: helvetica;">#encoding:UTF-8</span></span></td>
+<td style="width: 69.019%; height: 47px;"><span style="font-family: 標楷體;"><span style="font-size: large;">#coding 亦可使用encoding取代</span></span></td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 39.1424%; height: 47px;"><span style="font-size: large;"><span style="font-family: helvetica;">#coding=UTF-8</span></span></td>
+<td style="width: 69.019%; height: 47px;"><span style="font-family: 標楷體;"><span style="font-size: large;">#:可用=取代</span></span></td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 39.1424%; height: 47px;"><span style="font-size: large;"><span style="font-family: helvetica;">#    coding:    UTF-8</span></span></td>
+<td style="width: 69.019%; height: 47px;"><span style="font-family: 標楷體;"><span style="font-size: large;">#後可容許空格</span></span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">注意:2.7版的coding與:或=間不容許空格<br/>     3.3版之後的版本是允許空格的</span></span></p>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">二.資料型態: <br/>在python資料庫裡，資料會以各種不同形態儲存在電腦裡以利python進行讀取，其資料型態可分為數值型別(Numeric Type)、字串型別(String Type)及容器型別(Container Type)。</span></span></p>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">1.數值型別(Numeric Type)：         </span></span></p>
+<ul>
+<li><span style="font-size: large;"><span style="font-family: 標楷體;">int：integer的縮寫，也就是整數的意思負責儲存沒有小數點         的整數數值</span></span></li>
+<li><span style="font-family: 標楷體; font-size: large;">float：浮點數，可以儲存具有小數點的數值</span></li>
+<li><span style="font-family: 標楷體; font-size: large;">bool：boolean的縮寫中文統稱<span style="font-family: 標楷體;"><span style="font-size: large;">「</span></span>布林<span style="font-family: 標楷體;"><span style="font-size: large;">」，boolean只有只有三        種資料數值，包括「<span style="font-family: 標楷體; font-size: large;">True 真</span>」、「False 假」及「None</span></span></span><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體;"><span style="font-size: large;">錯誤」</span></span></span></li>
+<li><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體;"><span style="font-size: large;">complex：代表數學中的虛數並以complex(x,y)的形式出現，其中X為實部數字，Y為虛部數字。除此之外也可在數字後面直接加j來代表虛部數字。如：1+5j、6.7-4.5j</span></span></span><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體;"><span style="font-size: large;"></span></span></span></li>
+</ul>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">2.字串型別(String Type)：<br/>             123</span></span></p>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">3.容器型別(Container Type)：<br/>             123</span></span></p><h2>二進制法</h2>
+<p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">進制可以解讀成<span style="color: #ff0000;">最多數到幾位才進位</span>，雖然目前主流為二進位，不過另外還有八進位、十六進位。</span></span></p>
+<p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">我們平常使用的1、2、3、4、5、6、7、8、9為十進位。</span></span></p>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 822px;">
+<tbody>
+<tr style="height: 54px;">
+<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">二進位</span></span></strong></td>
+<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">八進位</span></span></strong></td>
+<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">十六進位</span></span></strong></td>
+<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">十進位</span></span></strong></td>
+</tr>
+<tr style="height: 48px;">
+<td style="width: 25%; text-align: center; height: 48px;">0</td>
+<td style="width: 25%; text-align: center; height: 48px;">0</td>
+<td style="width: 25%; text-align: center; height: 48px;">0</td>
+<td style="width: 25%; text-align: center; height: 48px;">0</td>
+</tr>
+<tr style="height: 48px;">
+<td style="width: 25%; height: 48px; text-align: center;">1</td>
+<td style="width: 25%; height: 48px; text-align: center;">1</td>
+<td style="width: 25%; height: 48px; text-align: center;">1</td>
+<td style="width: 25%; text-align: center; height: 48px;">1</td>
+</tr>
+<tr style="height: 48px;">
+<td style="width: 25%; height: 48px; text-align: center;">10</td>
+<td style="width: 25%; height: 48px; text-align: center;">2</td>
+<td style="width: 25%; height: 48px; text-align: center;">2</td>
+<td style="width: 25%; text-align: center; height: 48px;">2</td>
+</tr>
+<tr style="height: 48px;">
+<td style="width: 25%; height: 48px; text-align: center;">11</td>
+<td style="width: 25%; height: 48px; text-align: center;">3</td>
+<td style="width: 25%; height: 48px; text-align: center;">3</td>
+<td style="width: 25%; text-align: center; height: 48px;">3</td>
+</tr>
+<tr style="height: 48px;">
+<td style="width: 25%; height: 48px; text-align: center;">100</td>
+<td style="width: 25%; height: 48px; text-align: center;">4</td>
+<td style="width: 25%; height: 48px; text-align: center;">4</td>
+<td style="width: 25%; text-align: center; height: 48px;">4</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">101</td>
+<td style="width: 25%; height: 48px;">5</td>
+<td style="width: 25%; height: 48px;">5</td>
+<td style="width: 25%; height: 48px;">5</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">110</td>
+<td style="width: 25%; height: 48px;">6</td>
+<td style="width: 25%; height: 48px;">6</td>
+<td style="width: 25%; height: 48px;">6</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">111</td>
+<td style="width: 25%; height: 48px;">7</td>
+<td style="width: 25%; height: 48px;">7</td>
+<td style="width: 25%; height: 48px;">7</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1000</td>
+<td style="width: 25%; height: 48px;">10</td>
+<td style="width: 25%; height: 48px;">8</td>
+<td style="width: 25%; height: 48px;">8</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1001</td>
+<td style="width: 25%; height: 48px;">11</td>
+<td style="width: 25%; height: 48px;">9</td>
+<td style="width: 25%; text-align: center; height: 48px;">9</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1010</td>
+<td style="width: 25%; height: 48px;">12</td>
+<td style="width: 25%; height: 48px;">A</td>
+<td style="width: 25%; height: 48px;">(10)</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1011</td>
+<td style="width: 25%; height: 48px;">13</td>
+<td style="width: 25%; height: 48px;">B</td>
+<td style="width: 25%; height: 48px;">(11)</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1100</td>
+<td style="width: 25%; height: 48px;">14</td>
+<td style="width: 25%; height: 48px;">C</td>
+<td style="width: 25%; height: 48px;">(12)</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1101</td>
+<td style="width: 25%; height: 48px;">15</td>
+<td style="width: 25%; height: 48px;">D</td>
+<td style="width: 25%; height: 48px;">(13)</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1110</td>
+<td style="width: 25%; height: 48px;">16</td>
+<td style="width: 25%; height: 48px;">E</td>
+<td style="width: 25%; height: 48px;">(14)</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 25%; height: 48px;">1111</td>
+<td style="width: 25%; height: 48px;">17</td>
+<td style="width: 25%; height: 48px;">F</td>
+<td style="width: 25%; height: 48px;">(15)</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><a href="https://home.gamer.com.tw/creationDetail.php?sn=3095871" rel="noopener" target="_blank">https://home.gamer.com.tw/creationDetail.php?sn=3095871</a></p>
 <p></p>
 <h1>Issue &amp; solution</h1>
 <h1>experience</h1>
@@ -231,116 +382,7 @@
 <p></p>
 <h1>Final report</h1>
 <p><img alt="" height="789" src="/images/59.PNG" width="607"/></p>
-<h1>二進制法</h1>
-<p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">進制可以解讀成<span style="color: #ff0000;">最多數到幾位才進位</span>，雖然目前主流為二進位，不過另外還有八進位、十六進位。</span></span></p>
-<p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">我們平常使用的1、2、3、4、5、6、7、8、9為十進位。</span></span></p>
-<table border="1" style="border-collapse: collapse; width: 100%; height: 822px;">
-<tbody>
-<tr style="height: 54px;">
-<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">二進位</span></span></strong></td>
-<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">八進位</span></span></strong></td>
-<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">十六進位</span></span></strong></td>
-<td style="width: 25%; text-align: center; height: 54px;"><strong><span style="font-size: large;"><span style="font-family: 標楷體;">十進位</span></span></strong></td>
-</tr>
-<tr style="height: 48px;">
-<td style="width: 25%; text-align: center; height: 48px;">0</td>
-<td style="width: 25%; text-align: center; height: 48px;">0</td>
-<td style="width: 25%; text-align: center; height: 48px;">0</td>
-<td style="width: 25%; text-align: center; height: 48px;">0</td>
-</tr>
-<tr style="height: 48px;">
-<td style="width: 25%; height: 48px; text-align: center;">1</td>
-<td style="width: 25%; height: 48px; text-align: center;">1</td>
-<td style="width: 25%; height: 48px; text-align: center;">1</td>
-<td style="width: 25%; text-align: center; height: 48px;">1</td>
-</tr>
-<tr style="height: 48px;">
-<td style="width: 25%; height: 48px; text-align: center;">10</td>
-<td style="width: 25%; height: 48px; text-align: center;">2</td>
-<td style="width: 25%; height: 48px; text-align: center;">2</td>
-<td style="width: 25%; text-align: center; height: 48px;">2</td>
-</tr>
-<tr style="height: 48px;">
-<td style="width: 25%; height: 48px; text-align: center;">11</td>
-<td style="width: 25%; height: 48px; text-align: center;">3</td>
-<td style="width: 25%; height: 48px; text-align: center;">3</td>
-<td style="width: 25%; text-align: center; height: 48px;">3</td>
-</tr>
-<tr style="height: 48px;">
-<td style="width: 25%; height: 48px; text-align: center;">100</td>
-<td style="width: 25%; height: 48px; text-align: center;">4</td>
-<td style="width: 25%; height: 48px; text-align: center;">4</td>
-<td style="width: 25%; text-align: center; height: 48px;">4</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">101</td>
-<td style="width: 25%; height: 48px;">5</td>
-<td style="width: 25%; height: 48px;">5</td>
-<td style="width: 25%; height: 48px;">5</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">110</td>
-<td style="width: 25%; height: 48px;">6</td>
-<td style="width: 25%; height: 48px;">6</td>
-<td style="width: 25%; height: 48px;">6</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">111</td>
-<td style="width: 25%; height: 48px;">7</td>
-<td style="width: 25%; height: 48px;">7</td>
-<td style="width: 25%; height: 48px;">7</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1000</td>
-<td style="width: 25%; height: 48px;">10</td>
-<td style="width: 25%; height: 48px;">8</td>
-<td style="width: 25%; height: 48px;">8</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1001</td>
-<td style="width: 25%; height: 48px;">11</td>
-<td style="width: 25%; height: 48px;">9</td>
-<td style="width: 25%; text-align: center; height: 48px;">9</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1010</td>
-<td style="width: 25%; height: 48px;">12</td>
-<td style="width: 25%; height: 48px;">A</td>
-<td style="width: 25%; height: 48px;">(10)</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1011</td>
-<td style="width: 25%; height: 48px;">13</td>
-<td style="width: 25%; height: 48px;">B</td>
-<td style="width: 25%; height: 48px;">(11)</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1100</td>
-<td style="width: 25%; height: 48px;">14</td>
-<td style="width: 25%; height: 48px;">C</td>
-<td style="width: 25%; height: 48px;">(12)</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1101</td>
-<td style="width: 25%; height: 48px;">15</td>
-<td style="width: 25%; height: 48px;">D</td>
-<td style="width: 25%; height: 48px;">(13)</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1110</td>
-<td style="width: 25%; height: 48px;">16</td>
-<td style="width: 25%; height: 48px;">E</td>
-<td style="width: 25%; height: 48px;">(14)</td>
-</tr>
-<tr style="text-align: center;">
-<td style="width: 25%; height: 48px;">1111</td>
-<td style="width: 25%; height: 48px;">17</td>
-<td style="width: 25%; height: 48px;">F</td>
-<td style="width: 25%; height: 48px;">(15)</td>
-</tr>
-</tbody>
-</table>
-<p style="text-align: center;"><a href="https://home.gamer.com.tw/creationDetail.php?sn=3095871" rel="noopener" target="_blank">https://home.gamer.com.tw/creationDetail.php?sn=3095871</a></p>
+<p style="text-align: center;"></p>
 <h1>前導知識</h1>
 <p>CLI</p>
 <p>IPV4 VS IPV6</p>

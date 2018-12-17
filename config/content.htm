@@ -65,10 +65,51 @@
 <p><span style="font-size: large;"><span style="font-family: 標楷體;"><span style="font-family: 標楷體; font-size: large;">EX：字串變數X="Hello, world"裡，X這個字串裡面有12個字元，依序為「H」「e」「l」「l」「o」「,」「 」「w」「o」「r」「 l」「d」如果要取出X裡的第8字元就必須下<span style="color: #ff0000;">X[7]</span>的指令。</span></span></span></p>
 <p><strong><span style="font-size: large;"><span style="font-family: 標楷體;"><span style="font-family: 標楷體; font-size: large;">至於為何是X[7]，在電腦運算中是從0開始，所以從0算到8剛好是8個</span></span></span></strong></p>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">3.容器型別(Container Type)：<br/></span></span></p>
-<p><span style="font-size: large;"><span style="font-family: 標楷體;">這個型別裡的資料就像是置物箱一樣可裝入各式各樣的資料，同時也可在箱子裡裝入其他的箱子</span></span></p>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">這個型別裡的資料就像是置物箱一樣可裝入各式各樣的資料，同時也可在箱子裡裝入其他的箱子</span></span><span style="font-size: large;"><span style="font-family: 標楷體;"></span></span></p>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;"></span></span></p>
+<table border="1" style="border-collapse: collapse; width: 89.7638%;">
+<tbody>
+<tr>
+<td style="width: 119.2px;">容器類型</td>
+<td style="width: 83.2px;">tuple</td>
+<td style="width: 81.6px;">list</td>
+<td style="width: 90.4px;">set</td>
+<td style="width: 80.8px;">dict</td>
+</tr>
+<tr>
+<td style="width: 119.2px;">中文譯名</td>
+<td style="width: 83.2px;">序對</td>
+<td style="width: 81.6px;">串列</td>
+<td style="width: 90.4px;">集合</td>
+<td style="width: 80.8px;">字典</td>
+</tr>
+<tr>
+<td style="width: 119.2px;">使用符號</td>
+<td style="width: 83.2px;">(   )</td>
+<td style="width: 81.6px;">[  ]</td>
+<td style="width: 90.4px;">{  }</td>
+<td style="width: 80.8px;">{  }</td>
+</tr>
+<tr>
+<td style="width: 119.2px;">是否有順序性</td>
+<td style="width: 83.2px;">有</td>
+<td style="width: 81.6px;">有</td>
+<td style="width: 90.4px;">無</td>
+<td style="width: 80.8px;">無</td>
+</tr>
+<tr>
+<td style="width: 119.2px;">是否可更改內容</td>
+<td style="width: 83.2px;">不可以</td>
+<td style="width: 81.6px;">可以</td>
+<td style="width: 90.4px;">可以</td>
+<td style="width: 80.8px;">可以<br/><br/></td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><span style="font-family: 標楷體; font-size: large;">tuple：序對，在()中可以放置一個以上的資料值，有順序性但不能更改其內容。</span></li>
 <li><span style="font-family: 標楷體; font-size: large;">list：串列，在[]中可以放置一個以上的資料值，是一種有順序且可以更改其內容型態。</span></li>
+<<<<<<< HEAD
 <li><span style="font-family: 標楷體; font-size: large;">set：集合，在{}中</span></li>
 <li><span style="font-family: 標楷體; font-size: large;">dict：</span><span style="font-family: 標楷體; font-size: large;"></span></li>
 </ul>
@@ -136,6 +177,13 @@
 </table>
 <p>2.賦值:</p>
 <p>在數學中=為得出一個計算後之值的符號而在python中=則是賦值的意思,而賦值所代表的意思為將一個變數=某一個數字或物件使其作為他的代號,例如:x = 123, 則當我們使用呼應時只需要打上x則能夠顯示出123。而賦值也可以使用在list忠例如:number = [1 , 2 , 3]。</p><h2>二進制法</h2>
+=======
+<li><span style="font-family: 標楷體; font-size: large;">set：集合，在{}中可放置一個以上的資料值，類似數學裡的集合概念所以內容並無順序性。</span></li>
+<li><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體; font-size: large;">dict：字典，是dictionary的縮寫，以key-value對應的型態在{}裡放置一個以上的元素，字典是種配對型別也可用來放置一個以上的資料值，而key就是用來存取每個value的索引值。</span></span><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體; font-size: large;"></span></span></li>
+</ul>
+<h3><span style="font-family: 標楷體; font-size: large;"><span style="font-family: 標楷體; font-size: large;">三.輸出</span></span></h3>
+<h2>進制法</h2>
+>>>>>>> 76a8e35c241bdb8b177768067da41dad25cc16ca
 <p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">進制可以解讀成<span style="color: #ff0000;">最多數到幾位才進位</span>，雖然目前主流為二進位，不過另外還有八進位、十六進位。</span></span></p>
 <p><span style="font-family: 標楷體; color: #000000;"><span style="font-size: large;">我們平常使用的1、2、3、4、5、6、7、8、9為十進位。</span></span></p>
 <table border="1" style="border-collapse: collapse; width: 100%; height: 822px;">

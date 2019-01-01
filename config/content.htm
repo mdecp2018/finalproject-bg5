@@ -190,8 +190,73 @@
 <p><span style="font-family: 標楷體;"><span style="font-size: large;">在浮點數系統中，可分為float、complex與decimal三種類型。float是最常見的浮點數，用來保存倍精度浮點數類型的資料。complex則是用來儲存複數類型的數值。這裡的複數便是我們學的數學裡面的複數。</span></span></p><h3>三.格式化</h3>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">有時候，你手上的資訊並不是你想要的格式，這時就需要型態轉換，也就是使用轉型函數來將手上的資訊轉換成可以在你想要進行的操作方式下執行的資料格式。下面是幾種常見的型態轉換:</span></span></p><h3>四. 型態轉換</h3>
 <p>int(x[,base]) :將X轉換成整數，base式轉換的基數，預設為十進位。<br/>float(x) :將x轉換成浮點數<br/>str(x) :將x轉換成字串 <br/>tuple(s) :將s轉換為<br/>list(s) :將s轉換為list <br/>chr(x) :將x轉換成chr在這當中x為物件，s為字串。</p>
+<h2>file+module+exception(檔案+模組+例外)</h2>
 <p></p>
-<p></p><h2>二進制法</h2>
+<h3>一.檔案</h3>
+<p>在python語法裡如果想要開啟已儲存在電腦中的檔案時，可輸入<span style="color: #ff0000;">open()函數</span><span style="color: #000000;">來開啟，以進行檔案的讀取、修改或寫入等動作。</span></p>
+<p><span style="color: #000000;">Ex:flie object=open(file_name<em>[,access_mode][,buffering]</em>)</span></p>
+<p><span style="color: #000000;">輸入之指令的格式如例題瑣所示，[]裡面的參數都是可以省略的，而file_name即為想開啟的檔案除了檔案一定也包含了檔案的路徑，如果沒有包含路徑的話，將會被視為此檔案和目前編輯的程式碼處在相同的資料夾中。</span></p>
+<p><span style="color: #ff0000;">access_mode</span><span style="color: #000000;">表示想要存取的模式，下面將列出表格來展示。</span></p>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 19.5896%;">模式</td>
+<td style="width: 80.4104%;">描述</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">r</td>
+<td style="width: 80.4104%;">描述以唯讀方式打開文件。文件游標將會放在文件的開頭 。預設模式</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">rb</td>
+<td style="width: 80.4104%;">以唯獨方式打開文件(二進制格式)。文件游標將會放在文件的開頭。預設模式</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">r+</td>
+<td style="width: 80.4104%;">打開一個文件用於讀寫。文件游標將會放在文件開頭</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">rb+</td>
+<td style="width: 80.4104%;">以二進制格式打開一個文件用於讀寫。文件游標將會放在文件開頭</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">w</td>
+<td style="width: 80.4104%;">打開一個文件並且功能只限定於寫入。如果該文件已存在則將其覆蓋。如果該文件不存在，則創立新文件</td>
+</tr>
+<tr>
+<td style="width: 19.5896%;">wb</td>
+<td style="width: 80.4104%;">打開一個文件(二進制格式)並且功能只限定於寫入。如果該文件已存在則將其覆蓋。如果該文件不存在，則創立新文件。</td>
+</tr>
+</tbody>
+</table>
+<p>而<span style="color: #000000;">buffering代表資料讀入的暫存空間分別由.<span style="color: #ff0000;">0<span style="color: #000000;">、</span>1</span>表示</span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">0</span>代表沒有暫存空間</span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">≧1</span>代表有暫存空間，且一次可寫入多少資料量</span></p><h3>二.模組</h3>
+<p>模組其實就是.py檔，所以儲存起來的.py檔都可當作模組使用。如想使用模組，可以輸入指令<span style="color: #ff0000;">import</span>來叫出。而.py檔裡的內容包含了函數.類別.變數等內容</p>
+<p>除了剛剛講到的<span style="color: #ff0000;">import<span style="color: #000000;">外也能使用<span style="color: #ff0000;">from...import<span style="color: #000000;">叫出。</span></span></span></span></p>
+<p><span style="color: #000000;">Ex:</span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">import</span> module1[,<span style="color: #000000;">module2</span><span style="color: #000000;">[,…module]</span></span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">from </span><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">modname </span>import</span> name1[,name2[,…nameN]</span></span></p>
+<p><span style="color: #000000;"><span style="color: #000000;">由上面例題可得知import可以一次匯入多個模組，中間則以「，」分隔。</span></span></p>
+<p><span style="color: #000000;">from...  import 則是更精確的苗市要使用哪個模組裡的哪個函數。</span></p>
+<p><span style="color: #000000;"><span style="color: #000000;"></span></span></p><h3>三.例外</h3>
+<p>就如標題所示在程式運行時，不可能每次都成功，因此有可能會跳出錯誤的指令碼，因此導致程式中止，為了防止這種麻煩事發生，則衍生出了例外這種配套措施。</p>
+<p>如果要啟動配套流程就要輸入<span style="color: #ff0000;">try...except</span></p>
+<p><span style="color: #000000;">Ex:</span></p>
+<p><span style="color: #000000;">try:</span></p>
+<p><span style="color: #000000;">        欲執行</span><span style="color: #000000;">的程式碼T</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形1<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼1</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形2<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼2</span></p>
+<p><span style="color: #000000;">...</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形N<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼N</span></p>
+<p><span style="color: #000000;">else:</span></p>
+<p><span style="color: #000000;">  欲執行的程式碼E</span></p>
+<p><span style="color: #000000;">finally:</span></p>
+<p><span style="color: #000000;">  欲執行的程式碼F</span></p>
+<p><span style="color: #000000;">在<span style="color: #ff0000;">try...except<span style="color: #000000;">語法裡至少要存在一個except敘述，else:和finally:則可選擇要或不要的。</span></span></span></p><h2>二進制法</h2>
 <p>=======</p>
 <ul>
 <li><span style="font-family: 標楷體; font-size: large;">set：集合，在{}中可放置一個以上的資料值，類似數學裡的集合概念所以內容並無順序性。</span></li>

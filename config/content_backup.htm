@@ -115,7 +115,8 @@
 </ul>
 <h3>三.註解</h3>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">一般來說，註解是為了讓開發者更迅速地理解程式碼的目的、功能及使用方式。</span></span></p>
-<p><span style="font-size: large;"><span style="font-family: 標楷體;">除了「<span>#</span>」外，還可使用單<span>/</span>雙引號作為註解，單<span>/</span>雙引號功能相同但不能混用。</span></span></p><h3>四.縮排</h3>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">除了「<span>#</span>」外，還可使用單<span>/</span>雙引號作為註解，單<span>/</span>雙引號功能相同但不能混用。</span></span></p>
+<h3>四.縮排</h3>
 <p>相較於Java或C語言，python沒有{ }來當作區分程式碼的區隔，而是用縮排來區分，因此相較於其他程式語言，縮排的目的僅在於方便閱讀，</p>
 <p><span style="font-family: 標楷體; font-size: large;"></span></p>
 <h2>variable+assignment+operator(變數+賦值+運算值)</h2>
@@ -186,9 +187,12 @@
 <h3>一.字串</h3>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串是程式語言中重要的一環，在傳達資訊給使用者及使用者的輸入資料時常常被使用到，只要不以數值表示的資料都可以用字串來表示。再用字串時，python本身有內建一種東西，那就是函數庫裡面已經設定好多種函數。</span></span></p>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串有索引值得概念，也就是給定一個index值，python便會回傳在字串中該index值所代表的字元。字串本身具有順序性，並可以從中間取出或插入部分資料。</span></span></p>
-<p><span style="font-size: large;"><span style="font-family: 標楷體;">數字在python裡面可分成兩種傳統:整數和浮點數。整數分為int及bool兩種在邏輯運算式中0和false有一樣的意義，1和true有一樣的效果，而在數值型的運算中則相反。在一般電腦中，數值以二進位儲存並用十進位表示。</span></span></p><h3>二.浮點數</h3>
-<p><span style="font-family: 標楷體;"><span style="font-size: large;">在浮點數系統中，可分為float、complex與decimal三種類型。float是最常見的浮點數，用來保存倍精度浮點數類型的資料。complex則是用來儲存複數類型的數值。這裡的複數便是我們學的數學裡面的複數。</span></span></p><h3>三.格式化</h3>
-<p><span style="font-size: large;"><span style="font-family: 標楷體;">有時候，你手上的資訊並不是你想要的格式，這時就需要型態轉換，也就是使用轉型函數來將手上的資訊轉換成可以在你想要進行的操作方式下執行的資料格式。下面是幾種常見的型態轉換:</span></span></p><h3>四. 型態轉換</h3>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">數字在python裡面可分成兩種傳統:整數和浮點數。整數分為int及bool兩種在邏輯運算式中0和false有一樣的意義，1和true有一樣的效果，而在數值型的運算中則相反。在一般電腦中，數值以二進位儲存並用十進位表示。</span></span></p>
+<h3>二.浮點數</h3>
+<p><span style="font-family: 標楷體;"><span style="font-size: large;">在浮點數系統中，可分為float、complex與decimal三種類型。float是最常見的浮點數，用來保存倍精度浮點數類型的資料。complex則是用來儲存複數類型的數值。這裡的複數便是我們學的數學裡面的複數。</span></span></p>
+<h3>三.格式化</h3>
+<p><span style="font-size: large;"><span style="font-family: 標楷體;">有時候，你手上的資訊並不是你想要的格式，這時就需要型態轉換，也就是使用轉型函數來將手上的資訊轉換成可以在你想要進行的操作方式下執行的資料格式。下面是幾種常見的型態轉換:</span></span></p>
+<h3>四. 型態轉換</h3>
 <p>int(x[,base]) :將X轉換成整數，base式轉換的基數，預設為十進位。<br/>float(x) :將x轉換成浮點數<br/>str(x) :將x轉換成字串 <br/>tuple(s) :將s轉換為<br/>list(s) :將s轉換為list <br/>chr(x) :將x轉換成chr在這當中x為物件，s為字串。</p>
 <h2>file+module+exception(檔案+模組+例外)</h2>
 <p></p>
@@ -231,7 +235,8 @@
 </table>
 <p>而<span style="color: #000000;">buffering代表資料讀入的暫存空間分別由.<span style="color: #ff0000;">0<span style="color: #000000;">、</span>1</span>表示</span></p>
 <p><span style="color: #000000;"><span style="color: #ff0000;">0</span>代表沒有暫存空間</span></p>
-<p><span style="color: #000000;"><span style="color: #ff0000;">≧1</span>代表有暫存空間，且一次可寫入多少資料量</span></p><h3>二.模組</h3>
+<p><span style="color: #000000;"><span style="color: #ff0000;">≧1</span>代表有暫存空間，且一次可寫入多少資料量</span></p>
+<h3>二.模組</h3>
 <p>模組其實就是.py檔，所以儲存起來的.py檔都可當作模組使用。如想使用模組，可以輸入指令<span style="color: #ff0000;">import</span>來叫出。而.py檔裡的內容包含了函數.類別.變數等內容</p>
 <p>除了剛剛講到的<span style="color: #ff0000;">import<span style="color: #000000;">外也能使用<span style="color: #ff0000;">from...import<span style="color: #000000;">叫出。</span></span></span></span></p>
 <p><span style="color: #000000;">Ex:</span></p>
@@ -239,7 +244,26 @@
 <p><span style="color: #000000;"><span style="color: #ff0000;">from </span><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">modname </span>import</span> name1[,name2[,…nameN]</span></span></p>
 <p><span style="color: #000000;"><span style="color: #000000;">由上面例題可得知import可以一次匯入多個模組，中間則以「，」分隔。</span></span></p>
 <p><span style="color: #000000;">from...  import 則是更精確的苗市要使用哪個模組裡的哪個函數。</span></p>
-<p><span style="color: #000000;"><span style="color: #000000;"></span></span></p><h3>三.例外</h3><h2>二進制法</h2>
+<p><span style="color: #000000;"><span style="color: #000000;"></span></span></p>
+<h3>三.例外</h3>
+<p>就如標題所示在程式運行時，不可能每次都成功，因此有可能會跳出錯誤的指令碼，因此導致程式中止，為了防止這種麻煩事發生，則衍生出了例外這種配套措施。</p>
+<p>如果要啟動配套流程就要輸入<span style="color: #ff0000;">try...except</span></p>
+<p><span style="color: #000000;">Ex:</span></p>
+<p><span style="color: #000000;">try:</span></p>
+<p><span style="color: #000000;">        欲執行</span><span style="color: #000000;">的程式碼T</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形1<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼1</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形2<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼2</span></p>
+<p><span style="color: #000000;">...</span></p>
+<p><span style="color: #000000;">except</span><span style="color: #000000;">例外情形N<em>[,參數]</em></span></p>
+<p><span style="color: #000000;">  欲執行的程式碼N</span></p>
+<p><span style="color: #000000;">else:</span></p>
+<p><span style="color: #000000;">  欲執行的程式碼E</span></p>
+<p><span style="color: #000000;">finally:</span></p>
+<p><span style="color: #000000;">  欲執行的程式碼F</span></p>
+<p><span style="color: #000000;">在<span style="color: #ff0000;">try...except<span style="color: #000000;">語法裡至少要存在一個except敘述，else:和finally:則可選擇要或不要的。</span></span></span></p>
+<h2>IF-Else判斷</h2><h2>二進制法</h2>
 <p>=======</p>
 <ul>
 <li><span style="font-family: 標楷體; font-size: large;">set：集合，在{}中可放置一個以上的資料值，類似數學裡的集合概念所以內容並無順序性。</span></li>
@@ -467,7 +491,8 @@
 </ol>
 <h2>補課3</h2>
 <h3>複製與參照</h3>
-<p>Def為function而照規則function和class底下若要呼叫底層物件則必須使用global才能夠呼叫所以這裡必須使用global，這裡說明的是function和class能夠把這兩個想成大括號，而global則是能夠跳過這個大括號往外部去抓想要的物件，也就是先後順序的概念。</p><h2>week18</h2>
+<p>Def為function而照規則function和class底下若要呼叫底層物件則必須使用global才能夠呼叫所以這裡必須使用global，這裡說明的是function和class能夠把這兩個想成大括號，而global則是能夠跳過這個大括號往外部去抓想要的物件，也就是先後順序的概念。</p>
+<h2>week18</h2>
 <p></p>
 <h1>Attend＆Absence</h1>
 <p>Attend：O</p>

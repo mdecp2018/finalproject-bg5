@@ -262,7 +262,48 @@
 </tbody>
 </table>
 <p>由於集合這個資料型態是沒有順序的，因此就算同樣的程式執行數次後，出現的集合原素的排序可能不會相同。</p><h3>四.字典</h3>
-<h2>file+module+exception(檔案+模組+例外)</h2>
+<p>字典(dict)具有Key-Value對應的型態，且可以配對，也同時具備多種物件，key是存取該筆value的索引值下列有四種方法建立一個dict。</p>
+<p>d1={1:'a',2:'b'}</p>
+<p>d2=dict({1:'a',2:'b'})</p>
+<p>d3=dict(zip((1,2),('a','b')))</p>
+<p>d4dict([[2,'b'],[1,'a']])</p>
+<p>這四種方法所建立出來的dict都是相同的，雖然d1到d4的值是相同的，但是所指向的物件都不相同。而dict的讀取、刪除、回傳、判斷指令油麵表格展示。</p>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 22.7778%;">計算</td>
+<td style="width: 77.2222%;">描述</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">d[x]</td>
+<td style="width: 77.2222%;">從d中取得x所對應的值</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">d[x]=y</td>
+<td style="width: 77.2222%;">將d中的x所對應的值指定為y，若d中沒有x這個key則新增一組</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">del d[x]</td>
+<td style="width: 77.2222%;">刪除d中x所屬的組合</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">x in d</td>
+<td style="width: 77.2222%;">判斷x是否在d的key值中</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">x not in d</td>
+<td style="width: 77.2222%;">判斷x是否不在d的key值中</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">iter(d)</td>
+<td style="width: 77.2222%;">回傳由d的key值所建立的迭送器</td>
+</tr>
+<tr>
+<td style="width: 22.7778%;">len(d)</td>
+<td style="width: 77.2222%;">回傳d的資料組數</td>
+</tr>
+</tbody>
+</table><h2>file+module+exception(檔案+模組+例外)</h2>
 <p></p>
 <h3>一.檔案</h3>
 <p>在python語法裡如果想要開啟已儲存在電腦中的檔案時，可輸入<span style="color: #ff0000;">open()函數</span><span style="color: #000000;">來開啟，以進行檔案的讀取、修改或寫入等動作。</span></p>

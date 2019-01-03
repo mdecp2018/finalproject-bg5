@@ -180,8 +180,7 @@
 </tr>
 </tbody>
 </table><h3>二.賦值</h3>
-<p>在數學中=為得出一個計算後之值的符號而在python中=則是賦值的意思,而賦值所代表的意思為將一個變數=某一個數字或物件使其作為他的代號,例如:x = 123, 則當我們使用呼應時只需要打上x則能夠顯示出123。而賦值也可以使用在list忠例如:number = [1 , 2 , 3]。</p>
-<h2>staring + number(字串+數字)</h2>
+<p><span style="font-family: 標楷體;"><span style="font-size: large;">在數學中=為得出一個計算後之值的符號而在python中=則是賦值的意思,而賦值所代表的意思為將一個變數=某一個數字或物件使其作為他的代號,例如:x = 123, 則當我們使用呼應時只需要打上x則能夠顯示出123。而賦值也可以使用在list忠例如:number = [1 , 2 , 3]。</span></span></p><h2>staring + number(字串+數字)</h2>
 <h3>一.字串</h3>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串是程式語言中重要的一環，在傳達資訊給使用者及使用者的輸入資料時常常被使用到，只要不以數值表示的資料都可以用字串來表示。再用字串時，python本身有內建一種東西，那就是函數庫裡面已經設定好多種函數。</span></span></p>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串有索引值得概念，也就是給定一個index值，python便會回傳在字串中該index值所代表的字元。字串本身具有順序性，並可以從中間取出或插入部分資料。</span></span></p>
@@ -194,21 +193,28 @@
 <p>int(x[,base]) :將X轉換成整數，base式轉換的基數，預設為十進位。<br/>float(x) :將x轉換成浮點數<br/>str(x) :將x轉換成字串 <br/>tuple(s) :將s轉換為<br/>list(s) :將s轉換為list <br/>chr(x) :將x轉換成chr在這當中x為物件，s為字串。</p>
 <h2>tuple+list+set+dictonary(序對+串列+集合+字典)</h2>
 <h3>一.序對</h3>
-<<<<<<< HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 <p><span style="color: #ff0000;">序對(tuple)</span>會在()中放置資料，資料內容通常為數值，且<span style="color: #ff0000;">排列的順序是不能更改的</span>，他與串列的編號都是從0開始，下一小章會提到能更改順序的<span style="color: #ff0000;">串列(list)<span style="color: #000000;">，回到tuple，tuple內的資料是從0開始編號，以下為範例。</span></span></p>
 <p><span style="color: #ff0000;"><span style="color: #000000;">Ex:</span></span></p>
 <p><span style="color: #ff0000;"><span style="color: #000000;">data=(3,4,5</span></span><span style="color: #ff0000;"><span style="color: #000000;">)</span></span></p>
 <p><span style="color: #ff0000;"><span style="color: #000000;">data[0]=5  #將第0號的3改成5</span></span></p>
 <p><span style="color: #000000;">上述之例子為錯誤示範，因為tuple排列的順序是不可改變的，因<span style="color: #ff0000;"><span style="color: #000000;">data[0]=5是無效指令。</span></span></span></p>
 <p><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">既然list的彈性比tuple高那為何不能完全取代tuple呢?因為tuple是不能修改的，相對的存取速度自然的比list還快，因此tuple還是有list無法取代的部分。</span></span></span></p>
-<p><span style="color: #ff0000;"><span style="color: #000000;"></span></span></p><h3>二.串列</h3><h3>三.集合</h3><h3>四.字典</h3><h2>file+module+exception(檔案+模組+例外)</h2>
-=======
-<p><span style="color: #ff0000;">序對(tuple)</span>會在()中放置資料，資料內容通常為數值，且<span style="color: #ff0000;">排列的順序是不能更改的</span>，下一小章會提到能更改順序的<span style="color: #ff0000;">串列(list)<span style="color: #000000;">，回到tuple，tuple內的資料資料是從0開始編號以下有範例</span></span></p>
-<h3>二.串列</h3>
+<p><span style="color: #ff0000;"><span style="color: #000000;"></span></span></p><h3>二.串列</h3>
+<p>串列list在唱一篇有些許的提到過，他該tuple的差別在於list可隨時更改資料內容。</p>
+<p>Ex:</p>
+<p>grades=[12,60,15,70,90]</p>
+<p>print(grades[0])</p>
+<p>上述執行結果會顯示12，因為此列表的第0巷為12。</p>
+<p>而想要更改列表內的資料時，可由下面範例示範的來更改</p>
+<p>grades=[12,60,15,70,90]</p>
+<p>grades=[0]=55   #把55放在列表中的第一個位置</p>
+<p>print(grades)</p>
+<p>執行後的結果會變成[55,60,15,70,90]，第0項的12即變成了55。</p><h3>三.集合</h3><h3>四.字典</h3><h3>二.串列</h3>
 <h3>三.集合</h3>
 <h3>四.字典</h3>
 <h2>file+module+exception(檔案+模組+例外)</h2>
->>>>>>> c4592e0c84d37c46a25e286ef9f1af4818d10afc
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; c4592e0c84d37c46a25e286ef9f1af4818d10afc
 <p></p>
 <h3>一.檔案</h3>
 <p>在python語法裡如果想要開啟已儲存在電腦中的檔案時，可輸入<span style="color: #ff0000;">open()函數</span><span style="color: #000000;">來開啟，以進行檔案的讀取、修改或寫入等動作。</span></p>
@@ -619,15 +625,10 @@
 <p><img alt="" height="1444" src="/images/14-2.png" width="1000"/></p>
 <h2>15週</h2>
 <p><img alt="" height="1353" src="/images/15-1.png" width="1000"/></p>
-<<<<<<< HEAD
-<p><img alt="" height="1040" src="/images/15-2.png" width="1000"/></p><h2>16週</h2>
-<p><img alt="" height="1161" src="/images/16.png" width="1000"/></p><h2>期末課程學習報告影片</h2>
-=======
 <p><img alt="" height="1040" src="/images/15-2.png" width="1000"/></p>
 <h2>16週</h2>
 <p><img alt="" height="1161" src="/images/16.png" width="1000"/></p>
 <h2>期末課程學習報告影片</h2>
->>>>>>> c4592e0c84d37c46a25e286ef9f1af4818d10afc
 <h3>40723221邱正宇的期末課程學習報告</h3>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZggxeQtdhj0" width="560"></iframe></p>
 <p style="text-align: center;"></p>

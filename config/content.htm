@@ -183,7 +183,122 @@
 </table>
 <h3>二.賦值</h3>
 <p><span style="font-family: 標楷體;"><span style="font-size: large;">在數學中=為得出一個計算後之值的符號而在python中=則是賦值的意思,而賦值所代表的意思為將一個變數=某一個數字或物件使其作為他的代號,例如:x = 123, 則當我們使用呼應時只需要打上x則能夠顯示出123。而賦值也可以使用在list忠例如:number = [1 , 2 , 3]。</span></span></p>
-<h2>staring + number(字串+數字)</h2>
+<h2>Loop(迴圈)</h2>
+<h3 style="color: #626262;">一.For迴圈</h3>
+<p style="color: #626262;">      處理有次序性且知執行次數的問題</p>
+<p style="color: #626262;">執行條件:</p>
+<ol>
+<li>設定控制變數的初始值</li>
+<li>設定控制變數的終止值<span>(</span>結束條件<span>)</span></li>
+<li>設定控制變數值得變動方向與量<span>(</span>迴圈的迭代<span>)</span></li>
+</ol>
+<p>控制變數的設定十分重要</p>
+<p><span> </span></p>
+<p>結構如下<span>:</span></p>
+<p><span>  For expression in iterable:</span></p>
+<p><span>    </span>欲執行的程式碼<span>1….</span></p>
+<p><span>  Else:</span></p>
+<p><span>    </span>欲執行的程式碼<span>2  ….</span></p>
+<p><span>  </span>如果<span>expression</span>不是變數，<span>for</span>迴圈就是變數序列。因為<span>iterable</span>是迭代，所以這裡要放可以循序迭代的物件；而<span>else</span>是選擇性設定，之後的程式碼會在迴圈終止後被執行。</p>
+<p><span>             !!!!!!!!!!!!</span>以下為<span>for</span>迴圈流程圖<span>!!!!!!!!!!!!</span></p>
+<p><span> <img alt="" height="401" src="/images/1.PNG" width="434"/></span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span>Range­­­------</span>在<span>for</span>迴圈中常被使用的函數</p>
+<table>
+<tbody>
+<tr>
+<td width="277">
+<p>函數</p>
+</td>
+<td width="277">
+<p>描述</p>
+</td>
+</tr>
+<tr>
+<td width="277">
+<p><span>Range({start},stop{,step})</span></p>
+</td>
+<td width="277">
+<p>建立整數序列</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span> </span></p>
+<p><span>Range()</span>輸入<span>stop</span>就是停止條件；</p>
+<p><span>start,step</span>為選擇性選項。<span>Start</span>起始預設值為<span>0</span>；<span>step</span>為預設<span>1</span>的迭代數字</p>
+<p><span> </span></p>
+<p><span>  range()</span>傳回的資料是<span>range</span>的物件，通常會將其轉乘其他容器資料型態<span>Ex:list</span>、<span>tuple</span></p>
+<p><span> </span></p>
+<p><span>  </span>在<span>for</span>迴圈中使用<span>range()</span>，是將<span>range()</span>放入<span>iterable</span>。注意<span>range()</span>裡面的<span>step</span>可以設定為正、負整數</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span>  </span>示範程式碼</p>
+<p><span>01  print(range(10))        #</span>直接印出<span>range</span>物件，使用意義不大</p>
+<p><span>02</span></p>
+<p><span>03  Print(list(range(10)))     #range</span>物件轉為<span>list</span></p>
+<p><span>04  Print(list(range(3,15,)))   #</span>起始值為<span>3</span>，終止值為<span>15</span>，迭逮數字為<span>4</span></p>
+<p><span>05  (list(range(10,-14,-3)))   #</span>起始值<span>0</span>，終止值為<span>-14</span>，迭逮數字為<span>-3</span></p>
+<p><span>06</span></p>
+<p><span>07 tuple(range(8,12,6)))    #range</span>物件轉為<span>tuple</span></p>
+<p><span> </span></p>
+<p>執行結果à</p>
+<p><span>  &gt;&gt;&gt;</span></p>
+<p><span>  Range(0,10)</span></p>
+<p><span> </span>【<span>1,2,3,4,5,6,7,8,9</span>】</p>
+<p><span> </span>【<span>3,7,11</span>】</p>
+<p><span> </span>【<span>10,7,4,1,-2,-5,-8,-11</span>】</p>
+<p><span>  (-7,-2,3,8,13,18,23)</span></p>
+<p><span>  &gt;&gt;&gt;</span></p>
+<p><span> </span></p>
+<p><span>  </span>以<span>(list(range(10,-14,-3)))</span>為例，可以發現<span>range()</span>終止值沒有被輸出</p>
+<p><span>               </span>初始值迭代≦終止值à迭代結束à回傳<span>print()</span>進行列印</p>
+<p><span>               (</span>若迭代為正數，迭代數值≧終止值à迭代結束</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<h3>二.While迴圈</h3>
+<p>      處理沒有次序執行幾次的問題。</p>
+<p><span> </span></p>
+<p>結構如下：</p>
+<p><span>   While Boolean_expression</span></p>
+<p><span>     </span>欲執行的程式碼<span>1….</span></p>
+<p><span>   Else:</span></p>
+<p><span>     </span>欲執行的程式碼<span>2….</span></p>
+<p><span> </span></p>
+<p><span>Boolean(</span>布林運算敘述<span>)</span>是<span>while</span>迴圈執行條件。<span>While</span>迴圈只有終止條件的敘述，所以控制方式和調整值要去其他地方設定。</p>
+<p><span> </span></p>
+<p><span>Else</span>是選擇性設定。當<span>while</span>迴圈的條件不成立，<span>else</span>後面的程式碼就會執行</p>
+<p><span> </span></p>
+<p>如果<span>while</span>迴圈正常停止，<span>else</span>的程式碼則一定會被執行，<span>for</span>迴圈也一樣。</p>
+<p><span> </span></p>
+<p><span>       !!!!!!!!!!!</span>以下為<span>while</span>迴圈流程圖<span>!!!!!!!!!!!!!</span></p>
+<p><span><img alt="" height="319" src="/images/2.png" width="443"/></span></p>
+<p><span>While</span>迴圈彈性大，能處理<span>for</span>迴圈能處理的事情，但是<span>for</span>迴圈是特別設計於處理較制式化的問題，所以建議能用<span>for</span>迴圈就用<span>for</span>迴圈。</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<h3>三.巢狀迴圈</h3>
+<p><span> </span></p>
+<p><span>  </span>迴圈和<span>if</span>判斷式一樣可以巢狀執行。跟<span>if</span>判斷式一樣，在巢狀迴圈中，內部迴圈的執行式在外部迴圈之內，所以要注意內部迴圈有使用到外部迴圈中有更變的變數，內部迴圈會隨外部迴圈的更動而更動。</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<h3>四.強制結束：break</h3>
+<p> </p>
+<p>  強制終止迴圈在達成終止條件之前。</p>
+<p>  如else:後面的程式碼，在特定情形不想執行else:後面的程式碼，就可以使用break跳出迴圈，因為不是正常結束，所以else:後面的程式碼就不會被執行。</p>
+<p> </p>
+<p> </p>
+<h3>五.強制回頭：continue</h3>
+<p>  </p>
+<p>  使用上的意義，遇到continue指令則跳過之後的程式碼，直接執行下一次迴圈。</p>
+<p>  在while迴圈裡面用if判斷式，設定只要是三的倍數或者裡面還有三這個數字(如34、93等)都跳過。</p><h2>staring + number(字串+數字)</h2>
 <h3>一.字串</h3>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串是程式語言中重要的一環，在傳達資訊給使用者及使用者的輸入資料時常常被使用到，只要不以數值表示的資料都可以用字串來表示。再用字串時，python本身有內建一種東西，那就是函數庫裡面已經設定好多種函數。</span></span></p>
 <p><span style="font-size: large;"><span style="font-family: 標楷體;">字串有索引值得概念，也就是給定一個index值，python便會回傳在字串中該index值所代表的字元。字串本身具有順序性，並可以從中間取出或插入部分資料。</span></span></p>

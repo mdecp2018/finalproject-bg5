@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>期末分組專案</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.red3border {
+    border: 3px solid red;
+}
+.black3border {
+    border: 3px solid black;
+}
+</style>
+
+<script src="./../static/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+</script>
+
+</head><header><h1>第5組期末分組網站</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='Introduction.html'>Introduction</a><li><a href='Independent study.html'>Independent study</a><ul><li><a href='python basic syntax(python 基本用法).html'>python basic syntax(python 基本用法)</a><ul><li><a href='參考書籍.html'>參考書籍</a><li><a href='一.編碼.html'>一.編碼</a><li><a href='二.資料型態.html'>二.資料型態</a><li><a href='三.註解.html'>三.註解</a><li><a href='四.縮排.html'>四.縮排</a></li></ul><li><a href='variable+assignment+operator(變數+賦值+運算值).html'>variable+assignment+operator(變數+賦值+運算值)</a><ul><li><a href='一.變數.html'>一.變數</a><li><a href='二.賦值.html'>二.賦值</a></li></ul><li><a href='Loop(迴圈).html'>Loop(迴圈)</a><ul><li><a href='一.For迴圈.html'>一.For迴圈</a><li><a href='二.While迴圈.html'>二.While迴圈</a><li><a href='三.巢狀迴圈.html'>三.巢狀迴圈</a><li><a href='四.強制結束：break.html'>四.強制結束：break</a><li><a href='五.強制回頭：continue.html'>五.強制回頭：continue</a></li></ul><li><a href='staring + number(字串+數字).html'>staring + number(字串+數字)</a><ul><li><a href='一.字串.html'>一.字串</a><li><a href='二.浮點數.html'>二.浮點數</a><li><a href='三.格式化.html'>三.格式化</a><li><a href='四. 型態轉換.html'>四. 型態轉換</a></li></ul><li><a href='tuple+list+set+dictonary(序對+串列+集合+字典).html'>tuple+list+set+dictonary(序對+串列+集合+字典)</a><ul><li><a href='一.序對.html'>一.序對</a><li><a href='二.串列.html'>二.串列</a><li><a href='三.集合.html'>三.集合</a><li><a href='四.字典.html'>四.字典</a></li></ul><li><a href='file+module+exception(檔案+模組+例外).html'>file+module+exception(檔案+模組+例外)</a><ul><li><a href='一.檔案.html'>一.檔案</a><li><a href='二.模組.html'>二.模組</a><li><a href='三.例外.html'>三.例外</a></li></ul><li><a href='IF-Else判斷.html'>IF-Else判斷</a><ul><li><a href='一.單向判斷.html'>一.單向判斷</a><li><a href='二.雙向判斷.html'>二.雙向判斷</a><li><a href='三.多向判斷.html'>三.多向判斷</a><li><a href='四.巢狀判斷.html'>四.巢狀判斷</a></li></ul><li><a href='進制法.html'>進制法</a></li></ul><li><a href='Issue & solution.html'>Issue & solution</a><li><a href='experience.html'>experience</a><ul><li><a href='week10.html'>week10</a><li><a href='week11.html'>week11</a><li><a href='week12.html'>week12</a><ul><li><a href='十大遊戲開發引擎優缺點對比.html'>十大遊戲開發引擎優缺點對比</a></li></ul><li><a href='week13.html'>week13</a><li><a href='week14.html'>week14</a><li><a href='week15.html'>week15</a><li><a href='week16.html'>week16</a><li><a href='補課1.html'>補課1</a><ul><li><a href='控制流程和loop應用.html'>控制流程和loop應用</a></li></ul><li><a href='補課2.html'>補課2</a><ul><li><a href='物件導向及非物件導向.html'>物件導向及非物件導向</a></li></ul><li><a href='補課3.html'>補課3</a><ul><li><a href='複製與參照.html'>複製與參照</a></li></li></ul></ul><li><a href='Attend＆Absence.html'>Attend＆Absence</a><li><a href='Final report.html'>Final report</a><ul><li><a href='13週.html'>13週</a><li><a href='14週.html'>14週</a><li><a href='15週.html'>15週</a><li><a href='16週.html'>16週</a><li><a href='期末課程學習報告影片.html'>期末課程學習報告影片</a><ul><li><a href='40723221邱正宇的期末課程學習報告.html'>40723221邱正宇的期末課程學習報告</a></li></li></ul></ul><li><a href='前導知識.html'>前導知識</a><ul><li><a href='CLI  vs  GUI.html'>CLI  vs  GUI</a><li><a href='IDE.html'>IDE</a><li><a href='IPV4 與 IPV6差異.html'>IPV4 與 IPV6差異</a></li></ul></nav><section>Loop(迴圈) << <a href='Loop(迴圈).html'>Previous</a> <a href='二.While迴圈.html'>Next</a> >> 二.While迴圈<br /><h1>一.For迴圈</h1>
+<p style="color: #626262;">      處理有次序性且知執行次數的問題</p>
+<p style="color: #626262;">執行條件:</p>
+<ol>
+<li>設定控制變數的初始值</li>
+<li>設定控制變數的終止值<span>(</span>結束條件<span>)</span></li>
+<li>設定控制變數值得變動方向與量<span>(</span>迴圈的迭代<span>)</span></li>
+</ol>
+<p>控制變數的設定十分重要</p>
+<p><span> </span></p>
+<p>結構如下<span>:</span></p>
+<p><span>  For expression in iterable:</span></p>
+<p><span>    </span>欲執行的程式碼<span>1….</span></p>
+<p><span>  Else:</span></p>
+<p><span>    </span>欲執行的程式碼<span>2  ….</span></p>
+<p><span>  </span>如果<span>expression</span>不是變數，<span>for</span>迴圈就是變數序列。因為<span>iterable</span>是迭代，所以這裡要放可以循序迭代的物件；而<span>else</span>是選擇性設定，之後的程式碼會在迴圈終止後被執行。</p>
+<p><span>             !!!!!!!!!!!!</span>以下為<span>for</span>迴圈流程圖<span>!!!!!!!!!!!!</span></p>
+<p><span> <img alt="" height="401" src="./../images/1.PNG" width="434"/></span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span>Range­­­------</span>在<span>for</span>迴圈中常被使用的函數</p>
+<table>
+<tbody>
+<tr>
+<td width="277">
+<p>函數</p>
+</td>
+<td width="277">
+<p>描述</p>
+</td>
+</tr>
+<tr>
+<td width="277">
+<p><span>Range({start},stop{,step})</span></p>
+</td>
+<td width="277">
+<p>建立整數序列</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span> </span></p>
+<p><span>Range()</span>輸入<span>stop</span>就是停止條件；</p>
+<p><span>start,step</span>為選擇性選項。<span>Start</span>起始預設值為<span>0</span>；<span>step</span>為預設<span>1</span>的迭代數字</p>
+<p><span> </span></p>
+<p><span>  range()</span>傳回的資料是<span>range</span>的物件，通常會將其轉乘其他容器資料型態<span>Ex:list</span>、<span>tuple</span></p>
+<p><span> </span></p>
+<p><span>  </span>在<span>for</span>迴圈中使用<span>range()</span>，是將<span>range()</span>放入<span>iterable</span>。注意<span>range()</span>裡面的<span>step</span>可以設定為正、負整數</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span>  </span>示範程式碼</p>
+<p><span>01  print(range(10))        #</span>直接印出<span>range</span>物件，使用意義不大</p>
+<p><span>02</span></p>
+<p><span>03  Print(list(range(10)))     #range</span>物件轉為<span>list</span></p>
+<p><span>04  Print(list(range(3,15,)))   #</span>起始值為<span>3</span>，終止值為<span>15</span>，迭逮數字為<span>4</span></p>
+<p><span>05  (list(range(10,-14,-3)))   #</span>起始值<span>0</span>，終止值為<span>-14</span>，迭逮數字為<span>-3</span></p>
+<p><span>06</span></p>
+<p><span>07 tuple(range(8,12,6)))    #range</span>物件轉為<span>tuple</span></p>
+<p><span> </span></p>
+<p>執行結果à</p>
+<p><span>  &gt;&gt;&gt;</span></p>
+<p><span>  Range(0,10)</span></p>
+<p><span> </span>【<span>1,2,3,4,5,6,7,8,9</span>】</p>
+<p><span> </span>【<span>3,7,11</span>】</p>
+<p><span> </span>【<span>10,7,4,1,-2,-5,-8,-11</span>】</p>
+<p><span>  (-7,-2,3,8,13,18,23)</span></p>
+<p><span>  &gt;&gt;&gt;</span></p>
+<p><span> </span></p>
+<p><span>  </span>以<span>(list(range(10,-14,-3)))</span>為例，可以發現<span>range()</span>終止值沒有被輸出</p>
+<p><span>               </span>初始值迭代≦終止值à迭代結束à回傳<span>print()</span>進行列印</p>
+<p><span>               (</span>若迭代為正數，迭代數值≧終止值à迭代結束</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p><span> </span></p>
+<br />Loop(迴圈) << <a href='Loop(迴圈).html'>Previous</a> <a href='二.While迴圈.html'>Next</a> >> 二.While迴圈</section></div></body></html>

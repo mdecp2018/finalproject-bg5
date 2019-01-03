@@ -196,7 +196,7 @@
 <p>int(x[,base]) :將X轉換成整數，base式轉換的基數，預設為十進位。<br/>float(x) :將x轉換成浮點數<br/>str(x) :將x轉換成字串 <br/>tuple(s) :將s轉換為<br/>list(s) :將s轉換為list <br/>chr(x) :將x轉換成chr在這當中x為物件，s為字串。</p>
 <h2>tuple+list+set+dictonary(序對+串列+集合+字典)</h2>
 <h3>一.序對</h3>
-<p><span style="color: #ff0000;">序對(tuple)</span>會在()中放置資料，資料內容通常為數值，且<span style="color: #ff0000;">排列的順序是不能更改的</span>，下一小章會提到能更改順序的<span style="color: #ff0000;">串列(list)<span style="color: #000000;">，</span></span></p><h3>二.串列</h3><h3>三.集合</h3><h3>四.字典</h3><h2>file+module+exception(檔案+模組+例外)</h2>
+<p><span style="color: #ff0000;">序對(tuple)</span>會在()中放置資料，資料內容通常為數值，且<span style="color: #ff0000;">排列的順序是不能更改的</span>，下一小章會提到能更改順序的<span style="color: #ff0000;">串列(list)<span style="color: #000000;">，回到tuple，tuple內的資料資料是從0開始編號以下有範例</span></span></p><h3>二.串列</h3><h3>三.集合</h3><h3>四.字典</h3><h2>file+module+exception(檔案+模組+例外)</h2>
 <p></p>
 <h3>一.檔案</h3>
 <p>在python語法裡如果想要開啟已儲存在電腦中的檔案時，可輸入<span style="color: #ff0000;">open()函數</span><span style="color: #000000;">來開啟，以進行檔案的讀取、修改或寫入等動作。</span></p>
@@ -266,10 +266,10 @@
 <p><span style="color: #000000;">  欲執行的程式碼F</span></p>
 <p><span style="color: #000000;">在<span style="color: #ff0000;">try...except<span style="color: #000000;">語法裡至少要存在一個except敘述，else:和finally:則可選擇要或不要的。</span></span></span></p>
 <h2>IF-Else判斷</h2>
-<<<<<<< HEAD
 <h3>一.單向判斷</h3>
 <p>if判斷式是程式語言中的基本判斷式，以此為基礎發展出許多的結構，一支功能完整的程式一定有if判斷式。</p>
 <p>在if後面加條件判斷式，一定要加冒號在最後面，然後下一行要縮排，直到結束為止。</p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 <h3>二.雙向判斷</h3>
 <p>當if無法達成條件時，我們就用else來達成條件。有了else之後，當我們遇到條件不符合時，便會執行else:後面的程式碼。</p>
 <h3>三.多向判斷</h3>
@@ -277,16 +277,6 @@
 <h3>四.巢狀判斷</h3>
 <p>巢狀判斷就是在進行第一次判斷之後在進行下一個條件判斷，且兩條件是有關連的。如此一來就能有更精確的判斷。</p>
 <h2>二進制法</h2>
-=======
-<h3>5-1單向判斷</h3>
-<p>if判斷式是程式語言中的基本判斷式，以此為基礎發展出許多的結構，一支功能完整的程式一定有if判斷式。</p>
-<p>在if後面加條件判斷式，一定要加冒號在最後面，然後下一行要縮排，直到結束為止。</p>
-<<<<<<< HEAD
-<h3>5-2雙向判斷</h3>
-<p>當if無法達成條件時，我們就用else來達成條件。有了else之後，當我們遇到條件不符合時，便會執行else:後面的程式碼。</p>
-<h3>5-3多向判斷</h3>
-<p>通常在使用上，幾乎都是多種條件需要做判斷，在這種狀況下，python用elif來解決。elif是 else if 的縮寫。elif 可以存在許多個，因此可以應付多種情形。</p>
-<h3>5-4巢狀判斷</h3>
 =======
 <p>if判斷條件:</p>
 <p>執行的程式碼...</p><h3>5-2雙向判斷</h3>
@@ -305,9 +295,25 @@
 <p>...</p>
 <p>else:</p>
 <p>執行的程式碼N...</p><h3>5-4巢狀判斷</h3>
->>>>>>> 0998b6cc361d3aaa1f9ff8e736dc3462c9960dd1
-<p>巢狀判斷就是在進行第一次判斷之後在進行下一個條件判斷，且兩條件是有關連的。如此一來就能有更精確的判斷。</p><h2>二進制法</h2>
->>>>>>> aec115ce58bbd353c2a8eae0beed3bbeb1c4d41c
+<p>巢狀判斷就是在進行第一次判斷之後在進行下一個條件判斷，且兩條件是有關連的。如此一來就能有更精確的判斷。</p>
+<p>If判斷條件1:</p>
+<p>If判斷條件:</p>
+<p>執行的程式碼1a...</p>
+<p>else:</p>
+<p>執行的程式碼1b...</p>
+<p>elif判斷條件2:</p>
+<p style="color: #626262;">If判斷條件:</p>
+<p style="color: #626262;">執行的程式碼2a...</p>
+<p>else:</p>
+<p>執行的程式碼2b...</p>
+<p>...</p>
+<p>else:</p>
+<p style="color: #626262;">If判斷條件:</p>
+<p style="color: #626262;">執行的程式碼Na...</p>
+<p>else:</p>
+<p>執行的程式碼Nb...</p>
+<p></p><h2>二進制法</h2>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; aec115ce58bbd353c2a8eae0beed3bbeb1c4d41c
 <p>=======</p>
 <ul>
 <li><span style="font-family: 標楷體; font-size: large;">set：集合，在{}中可放置一個以上的資料值，類似數學裡的集合概念所以內容並無順序性。</span></li>
@@ -536,13 +542,12 @@
 <h2>補課3</h2>
 <h3>複製與參照</h3>
 <p>Def為function而照規則function和class底下若要呼叫底層物件則必須使用global才能夠呼叫所以這裡必須使用global，這裡說明的是function和class能夠把這兩個想成大括號，而global則是能夠跳過這個大括號往外部去抓想要的物件，也就是先後順序的概念。</p>
-<h2>week18</h2>
 <p></p>
 <h1>Attend＆Absence</h1>
 <p>Attend：O</p>
 <p>Absence：X</p>
 <p>Late：△</p>
-<table border="1" height="446" style="border-collapse: collapse; width: 102.256%; height: 559px;">
+<table border="1" height="446" style="border-collapse: collapse; width: 83.1272%; height: 559px;">
 <tbody>
 <tr style="height: 49px;">
 <td style="width: 10%; height: 49px;"></td>
@@ -556,8 +561,6 @@
 <td style="width: 1.25%; height: 49px;">補課1</td>
 <td style="width: 1.38504%; height: 49px;">補課2</td>
 <td style="width: 2.5%; height: 49px;">補課3</td>
-<td style="width: 5%; height: 49px;">放假</td>
-<td style="width: 10%; height: 49px;">WEEK18</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;"><span>邱正宇</span></td>
@@ -570,9 +573,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;">李建杰</td>
@@ -585,9 +586,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;">杜玗宸</td>
@@ -600,9 +599,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;">杜彥霆</td>
@@ -615,9 +612,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;">林子欽</td>
@@ -630,9 +625,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 <tr style="height: 85px;">
 <td style="width: 10%; height: 85px;">范誠宇</td>
@@ -645,9 +638,7 @@
 <td style="width: 10%; height: 85px; text-align: center;">O</td>
 <td style="width: 1.25%; height: 85px;">O</td>
 <td style="width: 1.38504%; height: 85px;">O</td>
-<td style="width: 2.5%; height: 85px;"></td>
-<td style="width: 5%; height: 85px;"></td>
-<td style="width: 10%; height: 85px;"></td>
+<td style="width: 2.5%; height: 85px;">O</td>
 </tr>
 </tbody>
 </table>

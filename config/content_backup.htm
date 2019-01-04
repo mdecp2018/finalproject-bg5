@@ -348,7 +348,7 @@
 <p>    Strp是string parse的簡稱。接受一個字串參數與一個格式參數，然後會回傳時間的tuple。這個函數和strftime()恰好對應。一個案格式輸出，一個案格式接收。</p>
 <p> </p>
 <p> </p>
-<h3> 二.函數</h3>
+<h3>二.函數</h3>
 <p>    函數是經過組織且可重複使用的程式碼，用來實現單一或是相關聯的程式碼。巧妙的運用函數可以提高程式碼的重複利用率，避免一樣的事情卻需要重複寫好幾次的程式碼來執行，與迴圈有些許類似，不同的地方在於函數是在需要時才被呼叫使用。</p>
 <p>    python裡面已經內定好許多好用的函數，例如input()、print()等等，不過這並不代表不能自己定義一個函數使用。畢竟python所內定的函數是針對大多數使用者都會使用到的功能，如果想要客制化的功能，必須靠自己。</p>
 <p> </p>
@@ -379,17 +379,16 @@
 <p><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">既然list的彈性比tuple高那為何不能完全取代tuple呢?因為tuple是不能修改的，相對的存取速度自然的比list還快，因此tuple還是有list無法取代的部分。</span></span></span></p>
 <p><span style="color: #ff0000;"><span style="color: #000000;"></span></span></p>
 <h3>二.串列</h3>
-<p>串列list在唱一篇有些許的提到過，他該tuple的差別在於list可隨時更改資料內容。</p>
+<p>串列list在上一篇有些許的提到過，他和tuple的差別在於list可隨時更改資料內容。</p>
 <p>Ex:</p>
 <p>grades=[12,60,15,70,90]</p>
 <p>print(grades[0])</p>
-<p>上述執行結果會顯示12，因為此列表的第0巷為12。</p>
+<p>上述執行結果會顯示12，因為此列表的第0項為12。</p>
 <p>而想要更改列表內的資料時，可由下面範例示範的來更改</p>
 <p>grades=[12,60,15,70,90]</p>
 <p>grades=[0]=55   #把55放在列表中的第一個位置</p>
 <p>print(grades)</p>
-<p>執行後的結果會變成[55,60,15,70,90]，第0項的12即變成了55。</p>
-<h3>三.集合</h3>
+<p>執行後的結果會變成[55,60,15,70,90]，第0項的12即變成了55。</p><h3>三.集合</h3>
 <p>集合set會在{}裡放置元素，在python語法裡的集合也類似數學中的集合概念。而集合也能做變更，由下表來詳細說明集合的函數說明。</p>
 <table border="1" height="426" style="border-collapse: collapse; width: 80.9701%; height: 452px;">
 <tbody>
@@ -402,7 +401,7 @@
 <td style="width: 50%; height: 48px;">將元素e加入set</td>
 </tr>
 <tr style="height: 48px;">
-<td style="width: 50%; height: 48px;">ㄔset.remove(e)</td>
+<td style="width: 50%; height: 48px;">set.remove(e)</td>
 <td style="width: 50%; height: 48px;">將元素e從set中移除</td>
 </tr>
 <tr style="height: 20px;">
@@ -435,8 +434,7 @@
 </tr>
 </tbody>
 </table>
-<p>由於集合這個資料型態是沒有順序的，因此就算同樣的程式執行數次後，出現的集合原素的排序可能不會相同。</p>
-<h3>四.字典</h3>
+<p>由於集合這個資料型態是沒有順序的，因此就算同樣的程式執行數次後，出現的集合原素的排序可能不會相同。</p><h3>四.字典</h3>
 <p>字典(dict)具有Key-Value對應的型態，且可以配對，也同時具備多種物件，key是存取該筆value的索引值下列有四種方法建立一個dict。</p>
 <p>d1={1:'a',2:'b'}</p>
 <p>d2=dict({1:'a',2:'b'})</p>

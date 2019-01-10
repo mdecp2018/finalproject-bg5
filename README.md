@@ -3,10 +3,8 @@
 
 http://mdecourse.github.io/2018fall/
 
-分組示範倉儲: https://github.com/scrum-1/scrum-1.github.io
+期末PPT:https://drive.google.com/file/d/1EcI-Vv_sxDnyHpSx9I5RaLdZ8G3F4pGO/view?usp=sharing
 
-設定步驟: https://github.com/scrum-1/scrum-1.github.io/wiki
-
-cpgx 網站: https://cpgx.kmol.info
+期末Word:https://drive.google.com/file/d/1wiw0DDAaX2UTFW0TDw4CcN7L9K-woPHQ/view?usp=sharing
 
 期末分組網站網址:https://mdecp2018.github.io/finalproject-bg5/content/index.html
